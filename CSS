@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f9fafb;
+}
+
+/* Navbar */
+.navbar {
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #a855f7, #f97316);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.navbar .menu a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+}
+.signin-btn {
+  background: linear-gradient(to right, #a855f7, #f97316);
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url("https://www.nasa.gov/sites/default/files/thumbnails/image/stsci-h-p2001a-m-2000x1500.png") center/cover no-repeat;
+  color: #fff;
+  text-align: center
