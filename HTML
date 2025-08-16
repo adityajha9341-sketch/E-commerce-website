@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmic Shop | Unique E-Commerce Experience</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    .gradient-text { background: linear-gradient(to right, #a855f7, #f97316); -webkit-background-clip: text; color: transparent; }
+    .hero-section {
+      background: url("https://www.nasa.gov/sites/default/files/thumbnails/image/stsci-h-p2001a-m-2000x1500.png") center/cover no-repeat;
+      color: white;
+      padding: 100px 20px;
+      position: relative;
+    }
+    .hero-section::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero-section > div {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between h-16">
+      <div class="flex items-center">
+        <span class="text-xl font-bold gradient-text">COSMIC SHOP</span>
+      </div>
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="#" class="hover:text-purple-600 font-medium">Home</a>
+        <a href="#products" class="hover:text-purple-600 font-medium">Products</a>
+        <a href="#features" class="hover:text-purple-600 font-medium">Features</a>
+        <button onclick="toggleAuthModal()" class="bg-gradient-to-r from-purple-600 to-orange-500 text-white px-4 py-2 rounded-md hover:opacity-90">Sign In</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-center">
+    <div>
+      <h1 class="text-5xl md:text-6xl font-bold mb-6">🚀 Shop The Cosmos</h1>
+      <p class="text-lg md:text-2xl mb-8 opacity-90">Discover interstellar products across the galaxy</p>
+      <button onclick="scrollToProducts()" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full transition transform hover:scale-105">
+        Explore Products
+      </button>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-10 text-center">🌌 Our Cosmic Collection</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        
+        <!-- 10 Products -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-2xl transition transform hover:-translate-y-2">
+          <img src="https://via.placeholder.com/300x200?text=Galaxy+Watch" alt="Galaxy Watch" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-lg font-semibold">Galaxy Watch</h3>
+            <p class="text-gray-600 mb-3">$199.99</p>
+            <button class="bg-gradient-to-r from-purple-600 to-orange-500 text-white px-4 py-2 rounded-md opacity-90 group-hover:opacity-100 transition">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-2xl transition transform hover:-translate-y-2">
+          <img src="https://via.placeholder.com/300x200?text=Cosmic+Headphones" alt="Cosmic Headphones" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-lg font-semibold">Cosmic Headphones</h3>
+            <p class="text-gray-600 mb-3">$149.99</p>
+            <button class="bg-gradient-to-r from-purple-600 to-orange-500 text-white px-4 py-2 rounded-md">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-2xl transition transform hover:-translate-y-2">
+          <img src="https://via.placeholder.com/300x200?text=Starlight+Lamp" alt="Starlight Lamp" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-lg font-semibold">Starlight Lamp</h3>
+            <p class="text-gray-600 mb-3">$89.99</p>
+            <button class="bg-gradient-to-r from-purple-600 to-orange-500 text-white px-4 py-2 rounded-md">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-2xl transition transform hover:-translate-y-2">
+          <img src="https://via.placeholder.com/300x200?text=Meteorite+Keychain" alt="Meteorite Keychain" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-lg font-semibold">Meteorite Keychain</h3>
+            <p class="text-gray-600 mb-3">$29.99</p>
+            <button class="bg-gradient-to-r from-purple-600 to-orange-500 text-white px-4 py-2 rounded-md">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-2xl transition transform hover:-translate-y-2">
+          <img src="https://via.placeholder.com/300x200?text=Space+Backpack" alt="Space Backpack" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-lg font-semibold">Space Backpack</h3>
+            <p class="text-gray-600 mb-3">$79.99</p>
+            <button class="bg-gradient-to-r from-purple-600 to-orange-500 text-white px-4 py-2 rounded-md">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-2xl transition transform hover:-translate-y-2">
+          <img src="https://via.placeholder.com/300x200?text=Cosmos+Sneakers" alt="Cosmos Sneakers" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-lg font-semibold">Cosmos Sneakers</h3>
+            <p class="text-gray-600 mb-3">$129.99</p>
+            <button class="bg-gradient-to-r from-purple-600 to-orange-500 text-white px-4 py-2 rounded-md">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-2xl transition transform hover:-translate-y-2">
+          <img src="https://via.placeholder.com/300x200?text=Orbit+Sunglasses" alt="Orbit Sunglasses" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-lg font-semibold">Orbit Sunglasses</h3>
+            <p class="text-gray-600 mb-3">$59.99</p>
+            <button class="bg-gradient-to-r from-purple-600 to-orange-500 text-white px-4 py-2 rounded-md">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-2xl transition transform hover:-translate-y-2">
+          <img src="https://via.placeholder.com/300x200?text=Cosmic+Mug" alt="Cosmic Mug" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-lg font-semibold">Cosmic Mug</h3>
+            <p class="text-gray-600 mb-3">$19.99</p>
+            <button class="bg-gradient-to-r from-purple-600 to-orange-500 text-white px-4 py-2 rounded-md">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-2xl transition transform hover:-translate-y-2">
+          <img src="https://via.placeholder.com/300x200?text=Galaxy+T-Shirt" alt="Galaxy T-Shirt" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-lg font-semibold">Galaxy T-Shirt</h3>
+            <p class="text-gray-600 mb-3">$39.99</p>
+            <button class="bg-gradient-to-r from-purple-600 to-orange-500 text-white px-4 py-2 rounded-md">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-2xl transition transform hover:-translate-y-2">
+          <img src="https://via.placeholder.com/300x200?text=Planet+Ring" alt="Planet Ring" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-lg font-semibold">Planet Ring</h3>
+            <p class="text-gray-600 mb-3">$49.99</p>
+            <button class="bg-gradient-to-r from-purple-600 to-orange-500 text-white px-4 py-2 rounded-md">Add to Cart</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-8 text-center">
+    <p class="mb-2">✨ Cosmic Shop - Bringing Interstellar Products to Your Doorstep ✨</p>
+    <p class="text-gray-400 text-sm">&copy; 2025 Cosmic Shop. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleAuthModal(){ alert("Auth Modal Placeholder 🚀"); }
+    function scrollToProducts(){ document.getElementById("products").scrollIntoView({behavior:"smooth"}); }
+  </script>
+</body>
+</html>
